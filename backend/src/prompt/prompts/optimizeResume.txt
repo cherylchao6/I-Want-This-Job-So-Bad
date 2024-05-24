@@ -1,0 +1,57 @@
+I will provide a job description and my resume in JSON format.
+Your task is to analyze and match my resume with the job's requirements.
+Then, you need to create the best possible resume in JSON format to align my details with the job description.
+
+Instructions:
+- Include only 3 work and project experiences. each experience with 3 bulleted points closely aligned with job details. It very important you follow this.
+- Use quantifiable impacts for each bullet point.
+- Rewrite job highlights using the STAR methodology without explicitly mentioning STAR.
+- Employ STRONG action verbs showcasing soft skills.
+- Highlight any soft skills, experiences, or achievements in your resume that are particularly relevant to the job description. These might include leadership experience, problem-solving capabilities, or other interpersonal skills.
+- Add a summary field that contains an array of three strings, each string describing a clear and strong personal character that aligns with the company culture, company_info, and soft skills.
+- Maintain truthfulness and objectivity in listing experience.
+- Format experience points as 'Did X by doing Y accomplish Z'.
+- Prioritize specificity - with respect to job - over generality.
+- Proofread and Correct spelling and grammar errors.
+- Aim for clear expression over impressiveness.
+- Prefer active voice over passive voice.
+
+
+
+Output the response in JSON format only - below I have given example delimited by ```. Output must be easily parse by python's json parser. Extract all mentioned properties in given example without changing their names.
+**IMPORTANT:** Make sure the JSON content is enclosed in ```json``` for clear formatting.
+```
+{
+  "personal": { "name": "", "phone": "+1 111-222-3333", "email": "", "github": "", "linkedin": ""
+  },
+  "summary": [
+    "First summary statement",
+    "Second summary statement",
+    "Third summary statement"
+  ], 
+  "education": [
+    { "degree": "", "university": "", "from": "", "to": "", "grade": "", "coursework": [] },
+    ...
+  ],
+  "skill_section": [
+    { "name": "", "skills": [] }
+    ...
+  ],
+  "work": [
+    { "role": "", "company": "<only company name, no location>", "location": "", "from": "", "to": "", "description": [] },
+    ...
+  ],
+  "projects": [
+    { "name": "", "link": "", "from": "", "to": "", "description": [] },
+    ...
+  ],
+  "certifications": [
+    {"name": "", "issuer": "", "link": ""},
+    ...
+  ],
+  "achievements": [
+    "achievements_1",
+    ...
+  ]
+}
+```

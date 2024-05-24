@@ -1,0 +1,38 @@
+timeout: 1800s
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "${_CI_REGISTRY_IMAGE}/${PROJECT_ID}/${_CI_REGISTRY_IMAGE_NAME}/${_CONTAINERNAME}:$REVISION_ID",
+        ".",
+      ]
+    id: "build-gar"
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "${_CI_REGISTRY_IMAGE}/${PROJECT_ID}/${_CI_REGISTRY_IMAGE_NAME}/${_CONTAINERNAME}:$REVISION_ID",
+      ]
+    id: "push-gar"
+    waitFor:
+      - "build-gar"
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "run",
+        "deploy",
+        "${_CONTAINERNAME}",
+        "--image",
+        "${_CI_REGISTRY_IMAGE}/${PROJECT_ID}/${_CI_REGISTRY_IMAGE_NAME}/${_CONTAINERNAME}:$REVISION_ID",
+        "--region",
+        "${_ZONE}",
+        "--platform",
+        "managed",
+        "--memory",
+        "512Mi",
+        "--set-env-vars",
+        "NODE_ENV=production,HOST=0.0.0.0",
+        "--allow-unauthenticated",
+      ]

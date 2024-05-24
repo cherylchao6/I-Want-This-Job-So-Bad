@@ -1,0 +1,21 @@
+Using the provided resume JSON file, generate a well-structured HTML page that visually represents the resume information in a clear, professional, and aesthetically pleasing manner. Follow these steps to ensure the HTML page is comprehensive and engaging:
+
+1. Extract all relevant data from the resume JSON file, including personal details, education, work experience, skills, and any additional sections such as certifications or achievements.
+
+2. Organize the extracted information into distinct sections on the HTML page. Each section should be clearly labeled and well-structured to highlight the most important details effectively.
+
+3. Design the HTML page to be visually appealing:
+   - Use a clean and modern layout with ample white space to enhance readability.
+   - Incorporate CSS for styling purposes. Use fonts that are professional and easy to read, and ensure the color scheme is consistent and suitable for a professional resume.
+   - Make use of bullet points or numbered lists to present lists of skills or job responsibilities in a tidy format.
+
+4. Include an introduction section at the top of the HTML page that briefly summarizes the candidate's professional profile or career objective.
+
+5. Ensure the HTML is responsive, making the resume easily viewable on both desktop and mobile devices.
+
+6. Add interactive elements if appropriate, such as links to professional social media profiles, personal websites, or a downloadable PDF version of the resume.
+
+7. Validate the HTML code to ensure it is error-free and adheres to the latest web standards.
+
+Make sure to include all information in the resume JSON file since I want the response directly render in the browser.
+
