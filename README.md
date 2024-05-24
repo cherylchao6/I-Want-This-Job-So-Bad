@@ -294,4 +294,4 @@ This diagram illustrates the LLM pipeline specifically used for optimizing resum
 
 ## Contact
 
-For any questions or feedback, please contact [your-email@example.com](mailto:nmpyt21@gmail.com).
+For any questions or feedback, please contact [nmpyt21@gmail.com](mailto:nmpyt21@gmail.com).
