@@ -1,4 +1,4 @@
-# IWantThisJobSoBad
+# I Want This Job So Bad
 
 A resume AI tool to optimize your resume based on the job description.
 
