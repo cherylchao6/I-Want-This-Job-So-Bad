@@ -157,7 +157,7 @@ This diagram illustrates the LLM pipeline specifically used for optimizing resum
   ```
 - **Job Description Parser**: Analyzes the job description to identify key requirements and preferences.
 
-  Formatted Resume JSON example
+  Formatted Job Description JSON example
   ```json
   {
     "title": "Software Developer Co-op positions (Sept 2024 - May 2025)",
