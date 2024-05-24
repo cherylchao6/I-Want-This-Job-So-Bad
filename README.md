@@ -4,7 +4,7 @@ A resume AI tool to optimize your resume based on the job description.
 
 ## Overview
 
-"IWantThisJobSoBad" is a powerful AI-driven tool designed to help you optimize your resume to align with specific job descriptions. By leveraging advanced language models, this tool can parse and analyze both resumes and job descriptions to provide tailored improvements, ensuring that your resume stands out to potential employers.
+"I Want This Job So Bad" is a powerful AI-driven tool designed to help you optimize your resume to align with specific job descriptions. By leveraging advanced language models, this tool can parse and analyze both resumes and job descriptions to provide tailored improvements, ensuring that your resume stands out to potential employers.
 
 #### Please wait a few minutes for the magic to happen as the analysis takes some time !!!
 
